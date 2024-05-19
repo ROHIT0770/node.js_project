@@ -29,7 +29,7 @@ server.use(express.static(path.resolve(__dirname,process.env.PUBLIC_DIR)));
 server.use("/products", productRouter.router);
 server.use("/users", userRouter.router);
 server.use('*',(req,res)=>{
-  res.sendFile(path.resolve(__dirname+'build','index.html'))
+  res.sendFile(path.resolve(__dirname,'build','index.html'))
 })
 
 
